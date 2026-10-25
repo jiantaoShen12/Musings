@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b17">
+  <meta name="description" content="一篇关于人生相遇、细胞命运、情感智能与动态世界的随笔。每个人都有自己的轨迹，而相遇会改变轨迹的方向。">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="相交之后｜每一次相遇，都改变了一条轨迹">
+  <meta property="og:description" content="从细胞命运到人的相遇：关于动态系统、群体涌现和虚拟世界的一点遐想。">
+  <meta property="og:url" content="https://jiantaoshen12.github.io/Musings/">
+  <title>相交之后｜轨迹与万物</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="progress" id="scrollProgress" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="相交之后，返回首页"><span class="wordmark-icon">∿</span><span>相交之后</span><em>Notes on Becoming</em></a>
+    <nav class="top-nav" aria-label="主导航">
+      <a href="#essay">随笔</a>
+      <a href="#connections">类比</a>
+      <a href="#references">引文</a>
+      <button class="share-button" id="shareTop" type="button"><span>分享此篇</span><span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> 随笔 001 <span class="eyebrow-separator">/</span> 2026.10.25</div>
+        <p class="hero-overline">A life, among countless trajectories.</p>
+        <h1 id="hero-title">我们都是<br><i>彼此生命中</i><br>的一段轨迹。</h1>
+        <p class="hero-intro">从一个关于相交与告别的视频出发，我突然觉得：人的成长、细胞的分化，以及我们试图创造的虚拟世界，也许都在面对同一种深刻的问题——<strong>个体如何在不断变化的环境与关系中，成为今天的自己。</strong></p>
+        <div class="hero-actions"><a class="primary-link" href="#essay">开始阅读 <span aria-hidden="true">↘</span></a><span class="read-time">约 6 分钟 · 个人思考</span></div>
+      </div>
+      <div class="trajectory-panel">
+        <div class="panel-caption"><span class="dot"></span> 一张不断变化的关系图 <span>FIG. 01</span></div>
+        <canvas id="trajectoryCanvas" aria-label="多条随时间变化、交汇和分离的轨迹示意动画"></canvas>
+        <div class="panel-overlay" aria-hidden="true"><span class="axis axis-y">STATE / 处境</span><span class="axis axis-x">TIME / 时间 →</span></div>
+        <div class="panel-controls">
+          <div class="mode-switch" role="group" aria-label="轨迹类比视角"><button class="mode active" type="button" data-mode="human" aria-pressed="true">人的一生</button><button class="mode" type="button" data-mode="cell" aria-pressed="false">细胞命运</button></div>
+          <div class="scrubber"><label for="timeSlider">时间 <output id="timeOutput">68%</output></label><input id="timeSlider" type="range" min="0" max="100" value="68" aria-label="调整轨迹时间"></div>
+          <button class="play-button" id="playButton" type="button" aria-label="暂停轨迹动画">Ⅱ</button>
+        </div>
+        <p class="viz-note" id="vizNote">相遇是一个瞬间，影响却可能沿着未来的轨迹延伸。</p>
+      </div>
+      <div class="hero-bottom"><span>01 / 一篇关于时间的私语</span><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
+    </section>
+
+    <section class="quote-band" aria-label="灵感引言">
+      <span class="quote-mark">“</span>
+      <blockquote>你这一生会和很多条线相交，<br>但没有一条能陪你走到最后。</blockquote>
+      <div class="quote-credit">— <a href="https://www.bilibili.com/video/BV1BFnc69Edn/" target="_blank" rel="noopener noreferrer">《你这一生会和很多条线相交，但没有一条能陪你走到最后》</a><br><span>阿猪的人生公式 · 哔哩哔哩 · 灵感来源</span></div>
+    </section>
+
+    <article id="essay" class="essay section-shell">
+      <aside class="article-sidebar"><div class="side-rule"></div><span class="side-label">THE ESSAY</span><span class="side-num">01 — 05</span><div class="side-links"><a href="#part1">相交</a><a href="#part2">表达</a><a href="#part3">群体</a><a href="#part4">虚拟世界</a><a href="#part5">意义与边界</a></div></aside>
+      <div class="article-content">
+        <div class="article-meta"><span>科学之外，生活之中</span><span>Jiantao Shen</span></div>
+        <h2>每一次相交，<br><em>都改变了一条轨迹。</em></h2>
+        <p class="lead">读到“没有一条线能陪你走到最后”时，我想到的并不只有告别。我想到的是：如果人生真是一条轨迹，那么我们的轨迹从来不是独立绘制的。它是被相遇、环境、选择与偶然性一起塑造出来的。</p>
+
+        <section id="part1" class="essay-part">
+          <div class="part-index">01 <span>THE ENCOUNTER</span></div>
+          <h3>我们并不是早已画好的直线</h3>
+          <p>有些人短暂地穿过我们的生活，有些人陪伴很长一程；有的相遇留下一个转折，有的相遇只留下几乎看不见的偏移。即便两个人此后不再同行，这段相交也未必消失——它可能已经改变了彼此接下来会走的方向。</p>
+          <p>把人生画成轨迹时，我更愿意把它想象成一条不断弯曲的曲线。我们不是沿着事先确定的线路前进；我们在前进的过程中，同时改变着自己与周围人的未来。</p>
+          <p class="pullquote">重要的或许不是有没有人能陪我们走到终点，而是我们如何参与了彼此的形成。</p>
+        </section>
+
+        <section id="part2" class="essay-part">
+          <div class="part-index">02 <span>THE EXPRESSION</span></div>
+          <h3>每个人，像一个不断改变状态的细胞</h3>
+          <p>做单细胞动力学研究以后，我越来越容易从生命系统的角度理解人。一个细胞并不是一个固定的标签。我们看到的是某一时刻的基因表达，但真正塑造它未来的，是内部调控、周围信号、历史状态，以及无法完全预知的随机变化。</p>
+          <p>人又何尝不是如此？一个人今天的语言、情绪、态度和选择，像是其内部状态的一次不完整“测量”。我们看得见表达，却无法仅凭这一刻就知道他全部的经历，更无法精确推断他将去往何处。</p>
+          <p>于是，一个令我着迷的类比出现了：<strong>人的情感表达，好像细胞的基因表达；人与人的交流，好像细胞之间的信号传递；社会环境对人的塑造，好像微环境对细胞命运的影响。</strong> 这不是说情绪就是基因，更不是说人可以被还原为细胞，而是两者都揭示了“状态—互动—变化”这一共同结构。</p>
+        </section>
+
+        <section id="part3" class="essay-part">
+          <div class="part-index">03 <span>THE EMERGENCE</span></div>
+          <h3>从一个人，到一座城市；从一个细胞，到一个组织</h3>
+          <p>个体的变化并不总能解释群体的变化。一个人在独处时表达的意见，可能不同于他置身群体时的表达。人与人不断沟通、协商、模仿、争执，逐渐出现共识、分工、文化和制度。这些特征不是任意一个个体所独有的，却真实地存在于群体之中。</p>
+          <p>细胞也是如此。单个细胞有自己的状态，细胞之间却会通过信号、接触和空间位置共同塑造组织结构。再往上一层，组织协同构成器官，器官维持整个生命体的功能。</p>
+          <p>家庭、社区、城市、国家，与细胞、组织、器官、个体，并不是可以一一对应的层级；但它们都在提醒我：<strong>理解复杂世界，不能只研究个体，也不能只观察总体。真正重要的机制，往往藏在不同尺度之间的相互作用里。</strong></p>
+        </section>
+
+        <div class="theory-card"><span class="theory-kicker">A MATHEMATICAL INTUITION · 一个数学化的直觉</span><div class="formula">d<span class="formula-italic">x</span><sub>i</sub> / d<span class="formula-italic">t</span> = <span class="f-green">f</span>(<span class="formula-italic">x</span><sub>i</sub>, <span class="formula-italic">e</span><sub>i</sub>, t) + ∑<sub>j</sub> <span class="f-blue">g</span>(<span class="formula-italic">x</span><sub>i</sub>, <span class="formula-italic">x</span><sub>j</sub>) + ξ<sub>i</sub></div><p>一个概念性模型：个体状态随时间变化，既受到自身状态与环境的影响，也受到其他个体的作用和偶然扰动。它是一种研究视角，不是已经被证明的人类情感方程。</p></div>
+
+        <section id="part4" class="essay-part">
+          <div class="part-index">04 <span>THE VIRTUAL WORLD</span></div>
+          <h3>为什么我觉得，创造情感虚拟世界与创造 AI 虚拟细胞如此相似</h3>
+          <p>想到米哈游所探索的情感交互与虚拟世界，我会联想到 AI Virtual Cell（AIVC）：两者虽然面向完全不同的对象，却都试图让数字世界中的个体不再只是静态标签或一次性输出，而是能够<strong>随着时间演化、受到环境影响、彼此作用，并在干预后产生可信的后续变化。</strong></p>
+          <p>一个虚拟角色如果只会在当前对话中生成恰当的情绪，或许还不能被称为拥有连续的生命经历。它需要某种持久的记忆、相对稳定却会演化的个性、与他人相互影响的关系，以及在不同场景下仍然自洽的行为变化。</p>
+          <p>同样，一个虚拟细胞如果只会生成看起来逼真的基因表达，也不等于我们已经理解了它的命运。它还需要在时间推进、微环境改变、基因扰动和细胞间互作之下，给出可以接受实验检验的预测。</p>
+          <p>这两条研究道路共同面对的，或许是一个更普遍的问题：<strong>如何从局部观察中学习一个能够持续演化、具有相互作用，并且能对“如果当时不同”作出合理回答的世界模型？</strong></p>
+        </section>
+
+        <section id="part5" class="essay-part">
+          <div class="part-index">05 <span>THE MEANING</span></div>
+          <h3>轨迹不是命运，模型也不是生命</h3>
+          <p>这样的类比有它的边界。基因表达是可以测量的分子信号，而人的情感包含主观体验、语言、文化与道德判断；细胞的分化与死亡也不能直接等同于人的成长与离别。社会组织更不是生物组织的简单放大。它们可以互相启发，却不能轻率地彼此替代。</p>
+          <p>尤其在动力学研究中，我始终觉得需要警惕一件事：<em>我们可以画出无数条平滑而动人的轨迹，但从几个时间点推断出的曲线，不一定就是某个个体真实经历过的道路。</em> 从快照到因果，从拟合到机制，中间还有很长的距离。</p>
+          <p>但也正因为如此，这个类比让我更加感受到生命的珍贵：每个人都在一个无法完全重复的动态世界中成长。我们不断表达自己，和世界发生碰撞，被环境改变，也反过来改变环境；最终老去、离开，而留下的影响继续存在于其他人的轨迹里。</p>
+          <div class="ending"><span class="ending-mark">∿</span><p>我们未必能陪任何人走到最后。<br>但曾经相交，就已经让两条轨迹<br><strong>不再是原来的模样。</strong></p></div>
+        </section>
+      </div>
+    </article>
+
+    <section class="connections-section" id="connections">
+      <div class="section-shell">
+        <div class="section-heading"><div><span class="section-kicker">BETWEEN TWO WORLDS / 两个世界之间</span><h2>同一种动态直觉，<br><em>不同的生命尺度。</em></h2></div><p>这些是启发研究的结构性类比，<br>不是严格的生物学等式。</p></div>
+        <div class="comparison-grid" role="list">
+          <div class="comparison-card" role="listitem"><span class="comp-num">01</span><div class="comp-pair"><span>一个人</span><span class="pair-symbol">↔</span><span>一个细胞</span></div><p>独特的状态、历史与未来可能性</p></div>
+          <div class="comparison-card" role="listitem"><span class="comp-num">02</span><div class="comp-pair"><span>情感与言语表达</span><span class="pair-symbol">↔</span><span>基因表达</span></div><p>某一时刻可观察的状态切面</p></div>
+          <div class="comparison-card" role="listitem"><span class="comp-num">03</span><div class="comp-pair"><span>交流与关系</span><span class="pair-symbol">↔</span><span>细胞间通讯</span></div><p>个体之间的信息、反馈和相互影响</p></div>
+          <div class="comparison-card" role="listitem"><span class="comp-num">04</span><div class="comp-pair"><span>成长的环境</span><span class="pair-symbol">↔</span><span>细胞微环境</span></div><p>处境改变行为与未来的可能路径</p></div>
+          <div class="comparison-card" role="listitem"><span class="comp-num">05</span><div class="comp-pair"><span>群体文化与制度</span><span class="pair-symbol">↔</span><span>组织涌现功能</span></div><p>互动产生超越单个成员的群体结构</p></div>
+          <div class="comparison-card" role="listitem"><span class="comp-num">06</span><div class="comp-pair"><span>人生经历与选择</span><span class="pair-symbol">↔</span><span>细胞命运轨迹</span></div><p>时间、历史、随机性与不同分支</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="references" class="references section-shell">
+      <div class="references-header"><span class="section-kicker">TRACES & SOURCES</span><h2>灵感与注脚</h2><p>一端来自屏幕中的一条曲线，一端来自正在研究的生命系统。点击查看原始内容。</p></div>
+      <div class="reference-list">
+        <a class="reference-row" href="https://www.bilibili.com/video/BV1BFnc69Edn/" target="_blank" rel="noopener noreferrer"><span class="ref-index">01 / VIDEO</span><span class="ref-text"><strong>你这一生会和很多条线相交，但没有一条能陪你走到最后</strong><small>阿猪的人生公式 · 哔哩哔哩 · 视频灵感</small></span><span class="ref-arrow">↗</span></a>
+        <a class="reference-row" href="https://doi.org/10.1038/s41540-025-00624-9" target="_blank" rel="noopener noreferrer"><span class="ref-index">02 / REVIEW</span><span class="ref-text"><strong>Deciphering cell-fate trajectories using spatiotemporal single-cell transcriptomic data</strong><small>Zhang, Z., Wang, Z., Sun, Y., Shen, J. et al. · npj Systems Biology and Applications 12, 2 (2026) · DOI: 10.1038/s41540-025-00624-9</small></span><span class="ref-arrow">↗</span></a>
+        <a class="reference-row" href="https://doi.org/10.1016/j.cell.2024.11.015" target="_blank" rel="noopener noreferrer"><span class="ref-index">03 / AIVC</span><span class="ref-text"><strong>How to build the virtual cell with artificial intelligence: priorities and opportunities</strong><small>关于 AI Virtual Cell 愿景的相关延伸阅读 · Cell (2024)</small></span><span class="ref-arrow">↗</span></a>
+      </div>
+      <p class="citation-note">说明：本文为个人哲学与科学类比，并非上述研究或视频作者的观点转述。对虚拟世界和情感智能的讨论是概念性思考，不代表对具体商业模型能力的技术评测。视频链接已核对标题及作者，未获得可逐句核实的完整字幕。</p>
+    </section>
+
+    <section class="journal section-shell" id="journal">
+      <div><span class="section-kicker">AN OPEN NOTEBOOK</span><h2>继续生长的<br><em>思想札记。</em></h2><p>这里独立于我的学术简历，记录那些在研究与生活之间突然连起来的想法。它不会在今天完结；新的观察、新的文章，未来会继续生长在这里。</p></div>
+      <div class="journal-list"><span class="journal-caption">文章目录 · INDEX</span><a class="journal-entry" href="#essay"><span class="journal-date">2026 / 10 / 25</span><span class="journal-title">001. 每一次相交，都改变了一条轨迹</span><span aria-hidden="true">↗</span></a><div class="journal-next"><span>下一篇</span><span>尚未写下。未来见。</span></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-brand" href="#top">∿ 相交之后</a><span>关于相遇、生命与尚未完成的世界。</span><div><span>Written by Jiantao Shen · 2026</span><button type="button" id="shareBottom">复制文章链接 ↗</button></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

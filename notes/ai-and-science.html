@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b17">
+  <meta name="description" content="关于 AI4Math、AI4Biology、工程、物理，以及当科学不再以人类的理解方式前进时，我们如何面对智力与创造的价值。">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="当科学不再以人类的方式被理解｜相交之后 002">
+  <meta property="og:description" content="AI4Science 也许不只是让 AI 做科学，而是重新追问：科学为什么必须沿着人类习惯的路径被理解？">
+  <meta property="og:url" content="https://jiantaoshen12.github.io/Musings/notes/ai-and-science.html">
+  <title>当科学不再以人类的方式被理解｜相交之后</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body.note-page{background:#f3f1e9;color:#263b2d}
+    .note-page .site-header{position:relative;height:82px;background:#14261d;border-bottom:1px solid rgba(220,238,215,.16)}
+    .note-page .top-nav{gap:23px}
+    .note-hero{position:relative;overflow:hidden;background:radial-gradient(circle at 84% 24%,rgba(116,153,111,.17),transparent 36%),#14261d;color:#e8eee3;padding:105px clamp(25px,9vw,150px) 115px}
+    .note-hero-inner{max-width:960px;margin:auto}
+    .note-hero .eyebrow{color:#b4cea8}
+    .note-hero h1{font:normal clamp(42px,5.5vw,78px)/1.38 var(--serif);letter-spacing:.035em;margin:33px 0 25px}
+    .note-hero h1 em{font-style:normal;color:#bddba8}
+    .note-deck{max-width:710px;font:normal clamp(17px,2vw,22px)/2.05 var(--serif);color:#bed0bf;margin:0 0 35px}
+    .note-meta{font-size:11px;letter-spacing:.14em;color:#8da891;display:flex;gap:22px;flex-wrap:wrap}
+    .note-layout{display:grid;grid-template-columns:195px minmax(0,760px);gap:clamp(35px,6vw,100px);max-width:1230px;margin:auto;padding:100px 35px 120px}
+    .note-aside{font-size:11px;color:#789078}
+    .note-aside strong{font:normal 27px var(--serif);display:block;color:#405d46;margin:13px 0 35px}
+    .note-toc{display:flex;flex-direction:column;gap:18px;position:sticky;top:35px;border-left:1px solid #cfdbc9;padding-left:17px}
+    .note-toc a:hover{color:#2d5936;text-decoration:underline;text-underline-offset:5px}
+    .note-prose{min-width:0}
+    .note-prose p{font-size:15px;line-height:2.3;letter-spacing:.025em;color:#465849;margin:18px 0}
+    .note-prose .note-lead{font:normal clamp(19px,2.2vw,25px)/2.1 var(--serif);color:#334c39;margin:0 0 42px}
+    .note-prose strong{font-weight:600;color:#315939}
+    .note-prose h2{font:normal clamp(27px,3.2vw,38px)/1.55 var(--serif);color:#263d2c;margin:24px 0}.note-prose h3{font:normal clamp(23px,2.7vw,31px)/1.6 var(--serif);color:#31503b;margin:46px 0 20px}
+    .note-section{border-top:1px solid #d0ddcc;padding-top:55px;margin-top:55px;scroll-margin-top:30px}
+    .note-index{font-size:10px;letter-spacing:.2em;color:#7d9a7b;text-transform:uppercase}
+    .note-quote{font:normal clamp(22px,2.6vw,30px)/1.85 var(--serif);color:#385a40;background:#e8eee3;border-left:3px solid #97b58b;padding:32px 36px;margin:48px 0}
+    .note-coda{background:#203b2b;color:#e7eee2;padding:45px clamp(25px,5vw,65px);margin-top:65px}
+    .note-coda p{font:normal clamp(21px,2.7vw,30px)/1.9 var(--serif);color:#e7eee2;margin:0}
+    .note-coda strong{color:#c5e0af}
+    .note-coda small{display:block;margin-top:26px;color:#a1bba4;font-size:11px;line-height:1.9;letter-spacing:.05em}
+    .note-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;border-top:1px solid #cfdbc9;padding-top:35px;margin-top:65px;font-size:12px;color:#557356}
+    .note-bottom a:hover{text-decoration:underline;text-underline-offset:5px}
+    .note-page .site-footer{flex-wrap:wrap}
+    @media(max-width:760px){.note-page .site-header{height:76px;padding:0 24px}.note-page .top-nav>a{display:inline;font-size:11px}.note-page .top-nav{gap:14px}.note-page .share-button{display:none}.note-hero{padding:75px 25px 82px}.note-hero h1{font-size:43px}.note-layout{display:block;padding:65px 25px 90px}.note-aside{display:none}.note-prose p{font-size:14px;line-height:2.2}.note-section{padding-top:43px;margin-top:45px}.note-quote{padding:23px 22px}.note-coda{margin-top:50px}.note-page .site-footer{padding:28px 25px}}
+  </style>
+</head>
+<body class="note-page">
+  <header class="site-header" id="top">
+    <a class="wordmark" href="../index.html" aria-label="返回相交之后首页"><span class="wordmark-icon">∿</span><span>相交之后</span><em>Notes on Becoming</em></a>
+    <nav class="top-nav" aria-label="文章导航">
+      <a href="../index.html#journal">全部随笔</a>
+      <a href="../index.html#essay">上一篇</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="note-hero" aria-labelledby="note-title">
+      <div class="note-hero-inner">
+        <div class="eyebrow"><span class="eyebrow-line"></span> 随笔 002 <span class="eyebrow-separator">/</span> 2026.11.02</div>
+        <h1 id="note-title">当科学不再<br><em>以人类的方式</em><br>被理解。</h1>
+        <p class="note-deck">关于 AI4Science、学科训练，以及一种正在动摇的智力骄傲。我不是在宣告科学家的终结，而是在追问：科学为什么必须沿着人类习惯的路径前进？</p>
+        <div class="note-meta"><span>Jiantao Shen</span><span>约 11 分钟</span><span>继续追问</span></div>
+      </div>
+    </section>
+
+    <div class="note-layout">
+      <aside class="note-aside" aria-label="文章目录"><span>THE ESSAY</span><strong>02 / 07</strong><nav class="note-toc">
+        <a href="#question">问题从哪里开始</a>
+        <a href="#math">AI4Math</a>
+        <a href="#biology">AI4Biology</a>
+        <a href="#engineering">AI4Engineering</a>
+        <a href="#physics">AI4Physics</a>
+        <a href="#chemistry">AI4Chemistry</a>
+        <a href="#meaning">渔夫与人的价值</a>
+        <a href="#directions">仍想走的三条路</a>
+      </nav></aside>
+      <article class="note-prose">
+        <p class="note-lead" id="question">我越来越怀疑，我们今天所谓的“学科”，本质上是为人类的学习能力、感官与寿命搭建的一套脚手架。它帮助我们理解世界，却未必是世界本身最自然的分法。假如未来发现规律的主体不再只具有人类的认知结构，科学还会长成今天的样子吗？</p>
+        <p>我接受过数学训练，也正在研究生命系统。曾经我以为，学科越扎实，走向 AI for Science 就越有优势。现在我有一个不太讨喜的怀疑：<strong>最擅长沿着既有学科理解问题的人，未必最擅长重新定义问题。</strong></p>
+        <p>我知道这些话会让人不舒服。但我不想因为它们不够温和，就提前放弃追问。</p>
+
+        <section class="note-section" id="math">
+          <div class="note-index">01 / AI4MATH — THE HABIT OF UNDERSTANDING</div>
+          <h2>AI4Math 可能最不适合被传统数学训练束缚的人做</h2>
+          <p>我们是怎样学会数学的？我们不断把陌生事物还原为熟悉事物。理解指数函数，可以研究它的泰勒展开；理解频率，可以借助傅里叶分析把复杂信号分解为可处理的成分。数学教育的一条重要路径，就是建立联系、寻找等价、把难以直接把握的对象转换成我们能够操作的表达。</p>
+          <p>我把这种习惯称为“低维地理解高维”。这里的低维、高维<strong>不是向量空间的维数</strong>，而是认识方式的比喻：人的注意力、工作记忆和直觉有限，所以我们需要分层、投影、类比，再一点点拼出更复杂的整体。</p>
+          <p>但 AI 的内部表征未必需要经过同样的桥。对我们来说遥远的两个概念，在某种机器表征中，可能只是相邻的方向、可以同时操作的结构，甚至不需要经过我们熟悉的“先理解 A，再证明 A 与 B 相通”的学习顺序。<strong>人费力建立的等价，或许只是另一种认知系统里自然并列的关系。</strong></p>
+          <p>这并不意味着数学可以被简单还原成一个坐标。证明、抽象和问题的创造依然重要。我在意的是：我们为什么默认这些能力必须以人类熟悉的学习顺序组织起来？</p>
+          <p>我真正担心的是：若我们把 AI4Math 理解成“让机器走完人类数学教育的全部台阶”，也许一开始就把它限制在了人类的脚手架里。</p>
+          <p class="note-quote">数学是否还有另一种语言——一种不是为了让我们理解而发明的语言？</p>
+        </section>
+
+        <section class="note-section" id="biology">
+          <div class="note-index">02 / AI4BIOLOGY — BEYOND DISCIPLINES</div>
+          <h2>AI4Biology 也许不能只由传统生物学的分科方式来定义</h2>
+          <p>生物学的知识被切分得更加明显。一个人可能毕生研究眼睛，另一个人研究胚胎，又一个人研究免疫或肿瘤。这样的分工绝非错误：它是实验成本、可观测尺度、专业训练和有限生命共同塑造的结果。但生命本身不会按院系、器官和论文关键词运行。</p>
+          <p>细胞处在组织、个体和环境之中；发育、疾病、代谢、免疫与行为彼此缠绕。若一种智能能够同时联系跨尺度的测量、追踪时间过程，并持续根据实验修正自己的模型，它可能提出一些我们因学科边界而迟迟无法提出的问题。</p>
+          <p>所以我有一个激进判断：未来真正重新定义生物学的人，也许不是从某个生物学分支一路专精下来的人，而是<strong>以 AI 为基本研究语言、再走进生物学的人</strong>。这不是说生物学知识无用，更不是说只懂模型就能绕过实验。恰恰相反，生命的复杂性要求这样的研究者比过去更认真地面对真实世界。</p>
+          <p>我愿意把判断说得更彻底：<strong>未来十五年内，一定会有 AI 出身的人获得诺贝尔生理学或医学奖。</strong> 如果没有，我甚至怀疑，可能不是 AI 没能抵达那个高度，而是发现的主体已经变成了 AI，人类却还不愿意把奖项颁给它。</p>
+          <p>我想象的那个获奖者，未必是在既有生物学题目上做出更好的模型，而是第一次让我们意识到：原来生命科学还可以被这样定义。</p>
+        </section>
+
+        <section class="note-section" id="engineering">
+          <div class="note-index">03 / AI4ENGINEERING — THE PHYSICAL LOOP</div>
+          <h2>AI4Engineering：具身智能到来之前的最后余晖？</h2>
+          <p>我有时觉得，今天许多 AI4Engineering 工作处在一个过渡期：模型可以学到大量文献、代码、设计与仿真结果，却仍不能像人一样大规模地走进工厂、实验室和现场，独立收集那些真正决定工程成败的数据。</p>
+          <p>一旦机器人、传感器、自动实验与模型形成闭环，“设计—制造—测量—失败—修正”就可能被重新组织。工程中的许多知识不再需要先被人类写成经验手册，机器也可能直接从物理反馈里学习。</p>
+          <p>但“最后余晖”不是说工程已经没有困难。现实世界有安全约束、长尾故障、材料与能耗成本；仿真与现实之间还有巨大裂缝。没有可靠的物理反馈，AI 的自信也许只是一种更精致的猜测。</p>
+          <p>真正让我不安的是：<strong>当动手试错也可以自动化，人类是否还能够以“我比机器更聪明、更会解决问题”为骄傲？</strong></p>
+        </section>
+
+        <section class="note-section" id="physics">
+          <div class="note-index">04 / AI4PHYSICS — THE EXPERIMENTAL WALL</div>
+          <h2>AI4Physics：理论的下一次重启，会由谁发起？</h2>
+          <p>我有一种近乎绝望的感受：“理论物理已经死了。”不是自然不再有规律，而是人类沿着既有理论直觉能够走到的地方，似乎越来越窄。下一次足以改写世界观的理论，为什么还应当由人类率先想到？</p>
+          <p>如果理论物理下一次真正重启，也许是 AI 发起的。但一组漂亮的方程不等于物理真理；它必须给出可检验的预言，最终与自然发生碰撞。</p>
+          <p>实验物理因此像一道更坚硬的墙。新探测器、极端条件、昂贵设施和复杂装置不能只靠更快的推理生成出来。AI 可以帮助设计实验，但若缺少真实数据、机器人身体、材料与仪器技术，发现的速度仍会被物理世界约束。</p>
+          <p>生物学也可能如此。我们可以拥有越来越强的虚拟细胞，却仍无法轻易在真实生命里完成高通量、长期、可靠的干预验证。<strong>卡住科学的，未必只是智力，也可能是接触世界的能力。</strong></p>
+        </section>
+
+        <section class="note-section" id="chemistry">
+          <div class="note-index">05 / AI4CHEMISTRY — A PAUSE</div>
+          <h2>AI4Chemistry：这里我还不懂</h2>
+          <p>化学我没有足够深的理解，暂时不敢作判断。把不知道的地方留白，也比把所有学科都硬塞进同一个预言更诚实。</p>
+        </section>
+
+        <section class="note-section" id="meaning">
+          <div class="note-index">06 / HUMAN VALUE — AFTER THE NET</div>
+          <h2>理工科的人，还有活着的价值吗？</h2>
+          <p>写到这里，问题终于不再是哪个学科更适合谁来做。我真正想问的是：<strong>一个把前二十年交给学习、考试、推导与研究的人，如果某天发现自己最珍视的智力劳动不再稀缺，他该怎样看待这二十年？</strong></p>
+          <p>我不想轻易接受“AI 是工具，人只需善于使用工具”的安慰。工具如果只是放大人的能力，我们仍是行动的主体；可如果工具开始自己提出问题、发现规律、设计实验，甚至评价什么问题值得研究，“使用者”这个位置真的足够吗？</p>
+          <p>我有时觉得，自己像一个旧时代的渔夫。曾经最值得骄傲的是对水流、鱼群和天气的判断；后来有了更强大的网、更精密的设备，那些经验不再决定收获。有人会说，渔夫仍可以钓鱼，享受过程。但我不愿意把一生的求知，仅仅解释成一种消遣。我不愿意最后只剩下做一个“钓鱼佬”的自由。</p>
+          <p>当然，<strong>一项能力失去市场稀缺性，不等于一个人失去存在的价值。</strong> 这两个判断在逻辑上不同。可在情感上，它们并不容易分开。我们曾用“理解得更多、思考得更深”来确认自己，而现在仿佛连这种确认方式都可能被夺走。</p>
+          <p>也许人还能决定问题的伦理边界，承担发现的后果，选择值得投入的世界；也许科学不该只是一次比拼谁更快找到答案的竞赛。但我不想用这些句子，过早替自己的疑惑画上句号。因为它们仍没有回答那个最刺痛我的问题：当机器也能创造知识时，人类的智力骄傲究竟安放在哪里？</p>
+        </section>
+
+        <section class="note-section" id="directions">
+          <div class="note-index">07 / WHAT IS LEFT — THREE DIRECTIONS</div>
+          <h2>如果一切都由数据和算力决定，我们还存在任何空间吗？</h2>
+          <p>这是最让我害怕的一层。如果知识生产最终取决于数据规模与计算规模，如果观察、推理、试验、修正都能由机器连续完成，那么人类还凭什么把自己放在科学的中心？</p>
+          <p>更可怕的是，数据并非凭空而来。机器人是收集数据的身体，实验装置是向自然提问的器官，能源与材料是算力能够抵达现实的边界。当这些环节也越来越能自我组织，留给人的，会不会只剩下围观？</p>
+          <p>我现在仍然愿意认真投入的，大概有三件事。</p>
+
+          <h3>其一：走出骗人的 AIVC，走向真实的虚拟细胞</h3>
+          <p>我不想把能生成逼真细胞表达、画出平滑轨迹的模型，就轻易叫作虚拟细胞。<strong>如果它无法在基因扰动、微环境改变和新的时间条件下经受真实实验，它至多是一个漂亮的拟合器。</strong> 我想要的是一个真正的动态系统：模型提出干预，实验给出结果，失败能被定位，机制能被修改，预测能力在一次次与现实的碰撞中增长。</p>
+          <p>虚拟细胞的意义不在于给现有单细胞模型换一个宏大的名字，而在于让我们第一次有能力系统地追问“如果改变这一点，生命接下来会怎样”。这是我不愿意放弃的第一件事。</p>
+
+          <h3>其二：建立米哈游式的虚拟世界——工程的巅峰，也是人文的汇流</h3>
+          <p>我想象的虚拟世界，不是把语言模型塞进一群 NPC，更不是让角色每次对话都显得情绪饱满就算成功。它应该拥有时间、记忆、关系、社会结构和不可逆的经历。每个人物都会因相遇而改变，群体会形成文化，世界会因为我们进入它而朝不同方向生长。</p>
+          <p>这样的世界一头连接系统工程、AI、图形学与仿真，另一头连接文学、历史、心理学、哲学、艺术与情感。<strong>它可能是工程能力的巅峰，也可能是理工与人文第一次如此深的融合。</strong> 在这里，创造不只是求一个最优答案，而是创造一种值得生活、值得感受的可能性。这也与我的第一篇《每一次相交，都改变了一条轨迹》悄悄相连。</p>
+
+          <h3>其三：如果我们在地球上走到了尽头，那就一起去火星吧</h3>
+          <p>我越来越能理解马斯克那种近乎执拗的方向感：<strong>人类不能永远只在一个星球上重复自己。</strong> 如果 AI 把地球上的知识生产推进到我们无法想象的速度，那就去面对新的物理环境、新的生态、新的工程极限，去建造、试错、失败，然后重新开始。</p>
+          <p>在这个意义上，我觉得马斯克是对的。去火星不是为了证明人类比 AI 更聪明，而是为了让人类与我们创造出的智能，一起把可以探索、可以生活的世界变得更大。</p>
+
+          <p>可我仍然无法因此轻松起来。因为这三件事都没有保证人类一定是主角。虚拟细胞可以由 AI 设计，虚拟世界也可以由 AI 建造，火星上的第一座实验室或许仍然由机器人先行。<strong>我能做的，也许只是拒绝提前退场。</strong></p>
+
+          <div class="note-coda">
+            <p>我们奋斗了二十年的一切，<br>真的只是一场笑话吗？<br><strong>有了渔网以后，<br>我不愿只被分配一根钓竿。</strong></p>
+            <small>我想参与创造新的海洋——哪怕仍然不知道，人类最终会在其中占据什么位置。理工科的人还有活着的价值吗？谁能回答我？</small>
+          </div>
+        </section>
+        <nav class="note-bottom" aria-label="阅读更多">
+          <a href="../index.html#essay">← 001. 每一次相交，都改变了一条轨迹</a>
+          <a href="../index.html#journal">返回文章目录 ↗</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="../index.html">∿ 相交之后</a><span>在研究与生活之间，记录仍未想通的事。</span><div><span>Written by Jiantao Shen · 2026</span></div></footer>
+</body>
+</html>

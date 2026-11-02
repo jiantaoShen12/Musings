@@ -5,10 +5,11 @@ A personal notebook about life trajectories, dynamical systems, virtual worlds, 
 ## Content and maintenance
 
 - `index.html`: the first essay, article index, sources, metadata, and semantic markup.
+- `notes/ai-and-science.html`: the second essay on AI4Science, disciplinary boundaries, and human value.
 - `styles.css`: typography, dark-forest palette, responsive layout.
 - `script.js`: the interactive trajectory illustration, share button, and reading progress.
 
-To add another essay, create a standalone `notes/<slug>.html` page, add it to the `文章目录` section of `index.html`, and place it in the main navigation or feature list. The site uses plain HTML/CSS/JS without a build system.
+To add another essay, create a standalone `notes/<slug>.html` page, add it to the `文章目录` section of `index.html`, and place it in the main navigation or feature list. The second essay follows this pattern. The site uses plain HTML/CSS/JS without a build system.
 
 ## Publish with GitHub Pages
 
